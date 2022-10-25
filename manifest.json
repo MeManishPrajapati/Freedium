@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Freedium",
+	"description": "This extension will open all your medium link in incognito mode. When you are out of your medium limit, you can open link in incognito and medium will allow you to read the article.",
+	"version": "1.0",
+	"icons": {
+		"48": "/images/FM.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"js": ["/scripts/content.js"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"permissions": ["tabs"],
+	"action": {
+		"default_popup": "/popup/index.html",
+		"default_icon": "/images/FM.png"
+	}
+}
