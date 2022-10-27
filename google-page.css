@@ -1,0 +1,18 @@
+.badge {
+	color: coral;
+	border: 1px solid coral;
+	padding: 2px;
+	margin-left: 2px;
+}
+.badge:visited {
+	color: coral;
+}
+
+a.invisible[data-freedium='fm'] {
+	transition: 200ms all;
+	opacity: 0;
+}
+
+a:has(a.invisible[data-freedium='fm']):hover a.invisible[data-freedium='fm'] {
+	opacity: 1;
+}

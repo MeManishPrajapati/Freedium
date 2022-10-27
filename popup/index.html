@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.html" />
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Freedium</title>
     <!-- <script src="../scripts/content.js" type="module"></script> -->
@@ -13,7 +13,26 @@
 </head>
 
 <body>
-    <h1>Freedium</h1>
+    <div>
+        <h1>Freedium</h1>
+        <p>A easy way to bypass Medium limit</p>
+    </div>
+    <form>
+        <div>
+            <input id="direct" type="radio" name="config" value="direct" />
+            <label for="direct">Direct open link in incognito window</label>
+        </div>
+        <div>
+            <input id="button" type="radio" name="config" value="button" />
+            <label for="button">Show a button <strong>beside the link</strong></label>
+        </div>
+        <div>
+            <input id="invisible" type="radio" name="config" value="invisible" />
+            <label for="invisible">Show a button <strong>when hover on the link</strong></label>
+        </div>
+        <button id="saveButton">Save</button>
+    </form>
 </body>
+<script src="../scripts/popup.js" defer></script>
 
 </html>

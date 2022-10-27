@@ -1,5 +1,35 @@
-.badge {
-	color: coral;
-	border: 1px solid coral;
-	padding: 2px;
+* {
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+
+body {
+	width: 300px;
+	padding: 16px;
+	box-sizing: border-box;
+	box-sizing: border-box;
+	background: #414141;
+}
+
+div {
+	margin-bottom: 24px;
+}
+
+form div {
+	display: grid;
+	grid-template-columns: max-content auto;
+	align-items: center;
+	gap: 8px;
+
+	margin-bottom: 16px;
+}
+
+form button {
+	border: none;
+	padding: 8px 16px;
+	background: white;
+	color: black;
+
+	/* margin-top: 24px; */
 }
