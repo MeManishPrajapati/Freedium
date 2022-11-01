@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Freedium",
 	"description": "This extension let you open unlimited Medium article. It just open all medium links in new Incognito window.",
-	"version": "1.0",
+	"version": "0.0.0.1",
 	"icons": {
 		"48": "/images/FM.png"
 	},
